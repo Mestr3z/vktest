@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Mestr3z.github.io/vktest/static/css/main.e6c13ad2.css",
-    "main.js": "/Mestr3z.github.io/vktest/static/js/main.54eccdb4.js",
-    "static/js/453.c9ad091a.chunk.js": "/Mestr3z.github.io/vktest/static/js/453.c9ad091a.chunk.js",
-    "index.html": "/Mestr3z.github.io/vktest/index.html",
-    "main.e6c13ad2.css.map": "/Mestr3z.github.io/vktest/static/css/main.e6c13ad2.css.map",
-    "main.54eccdb4.js.map": "/Mestr3z.github.io/vktest/static/js/main.54eccdb4.js.map",
-    "453.c9ad091a.chunk.js.map": "/Mestr3z.github.io/vktest/static/js/453.c9ad091a.chunk.js.map"
+    "main.css": "/vktest/static/css/main.e6c13ad2.css",
+    "main.js": "/vktest/static/js/main.fd1497ae.js",
+    "static/js/453.c9ad091a.chunk.js": "/vktest/static/js/453.c9ad091a.chunk.js",
+    "index.html": "/vktest/index.html",
+    "main.e6c13ad2.css.map": "/vktest/static/css/main.e6c13ad2.css.map",
+    "main.fd1497ae.js.map": "/vktest/static/js/main.fd1497ae.js.map",
+    "453.c9ad091a.chunk.js.map": "/vktest/static/js/453.c9ad091a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.54eccdb4.js"
+    "static/js/main.fd1497ae.js"
   ]
 }
