@@ -25,7 +25,7 @@
 
 ```bash
 git clone https://github.com/Mestr3z/vktest.git
-cd record-manager
+cd vktest
 npm install
 npm run serve-api
 npm start
