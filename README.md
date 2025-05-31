@@ -17,7 +17,7 @@
 - **Material-UI (MUI v5)** — готовые стилизованные компоненты для быстрого UI  
 - **react-window + react-window-infinite-loader** — виртуализация строк таблицы и динамическая подгрузка  
 - **json-server** — простое mock-API на основе `db.json`  
-- **Jest + @testing-library/react** — написаны тесты для хука и формы, включая сетевые запросы  
+- **Jest + @testing-library/react** — написаны тесты для хука и формы, включая сетевые запросы 
 
 ---
 
