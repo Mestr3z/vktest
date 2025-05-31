@@ -1,4 +1,5 @@
 # Менеджер записей (React + TypeScript)
+[Link to the pages](https://mestr3z.github.io/vktest/)
 
 Небольшое приложение для управления записями:  
 - Таблица с бесконечным скроллом (Infinite Loader + React Window).  

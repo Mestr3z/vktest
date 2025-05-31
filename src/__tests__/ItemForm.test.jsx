@@ -22,16 +22,21 @@ describe("ItemForm", () => {
     fetch.mockReset();
   });
 
-  it("показывает ошибки при пустом сабмите и не вызывает fetch", async () => {
-    setup();
+  it("ошибки при пустом сабмите и не вызывает fetch", async () => {
+    const { container } = setup();
 
-    await userEvent.click(screen.getByRole("button", { name: /Добавить/i }));
+    const formElement = container.querySelector("form");
+    expect(formElement).toBeInTheDocument();
+
+    fireEvent.submit(formElement);
+
     expect(await screen.findAllByText(/Минимум 3 символа/i)).toHaveLength(3);
+
     expect(fetch).not.toHaveBeenCalled();
   });
 
   it("валидный ввод и POST через fetch", async () => {
-    setup();
+    const { container } = setup();
 
     await userEvent.type(screen.getByLabelText(/Название/i), "ABC");
     await userEvent.type(screen.getByLabelText(/Категория/i), "DEF");
@@ -46,13 +51,21 @@ describe("ItemForm", () => {
       json: async () => ({ id: 1 }),
     });
 
-    const btn = screen.getByRole("button", { name: /Добавить/i });
-    expect(btn).not.toBeDisabled();
+    await waitFor(() => {
+      const btn = screen.getByRole("button", { name: /Добавить/i });
+      expect(btn).not.toBeDisabled();
+    });
 
+    const btn = screen.getByRole("button", { name: /Добавить/i });
     fireEvent.click(btn);
 
     await waitFor(() => {
-      expect(fetch).toHaveBeenCalledWith("/items", {
+      expect(fetch).toHaveBeenCalledTimes(1);
+    });
+
+    expect(fetch).toHaveBeenCalledWith(
+      "http://localhost:4000/items",
+      expect.objectContaining({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -62,7 +75,11 @@ describe("ItemForm", () => {
           quantity: 5,
           price: 123,
         }),
-      });
+      })
+    );
+
+    await waitFor(() => {
+      expect(screen.getByLabelText(/Название/i)).toHaveValue("");
     });
   });
 });

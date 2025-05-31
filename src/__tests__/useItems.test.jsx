@@ -40,6 +40,12 @@ test("useItems loads pages", async () => {
   await waitFor(() => expect(hookState.data.pages[1]).toBeDefined());
   expect(hookState.data.pages[1]).toHaveLength(0);
 
-  expect(fetch).toHaveBeenNthCalledWith(1, "/items?_page=1&_limit=2");
-  expect(fetch).toHaveBeenNthCalledWith(2, "/items?_page=2&_limit=2");
+  expect(fetch).toHaveBeenNthCalledWith(
+    1,
+    "http://localhost:4000/items?_page=1&_limit=2"
+  );
+  expect(fetch).toHaveBeenNthCalledWith(
+    2,
+    "http://localhost:4000/items?_page=2&_limit=2"
+  );
 });

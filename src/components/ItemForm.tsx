@@ -18,10 +18,11 @@ export const ItemForm: React.FC<ItemFormProps> = ({ onSuccess }) => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting },
+    formState: { errors, isSubmitting, isValid },
   } = useForm<NewItemFormValues>({
     resolver: zodResolver(newItemSchema),
     mode: "onChange",
+    reValidateMode: "onChange",
     defaultValues: {
       name: "",
       description: "",
@@ -122,7 +123,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({ onSuccess }) => {
         <Button
           type="submit"
           variant="contained"
-          disabled={isSubmitting}
+          disabled={!isValid || isSubmitting}
           startIcon={isSubmitting ? <CircularProgress size={16} /> : undefined}
         >
           Добавить
