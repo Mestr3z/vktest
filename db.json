@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "43f3",
+      "name": "фцв",
+      "description": "фцвфцв",
+      "quantity": 3,
+      "price": 123123321,
+      "category": "фцвфцв"
+    },
+    {
+      "id": "381e",
+      "name": "dawdawd",
+      "description": "dwadawd",
+      "quantity": 11231,
+      "price": 123123,
+      "category": "awdaw"
+    },
+    {
+      "id": "94b0",
+      "name": "123",
+      "description": "12332",
+      "quantity": 1,
+      "price": 0,
+      "category": "123"
+    },
+    {
+      "id": "e93e",
+      "name": "1231",
+      "description": "124214124",
+      "quantity": 1,
+      "price": 0,
+      "category": "123123412"
+    },
+    {
+      "id": "fbec",
+      "name": "123123",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "2a59",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "a384",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "c1b9",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "05c7",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "98fd",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "852f",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "b8a3",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "722f",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "7adc",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "3849",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "b679",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "4921",
+      "name": "12345",
+      "description": "12345",
+      "quantity": 1,
+      "price": 0,
+      "category": "12345"
+    },
+    {
+      "id": "fcdb",
+      "name": "Зубило",
+      "description": "Нормальное такое зубило",
+      "quantity": 1,
+      "price": 3000,
+      "category": "Инструмент"
+    },
+    {
+      "id": "bc0c",
+      "name": "Да да ",
+      "description": "дааааа",
+      "quantity": 1,
+      "price": 100,
+      "category": "я"
+    },
+    {
+      "id": "ce47",
+      "name": "123",
+      "description": "123",
+      "category": "вфцв",
+      "quantity": 2,
+      "price": 0
+    }
+  ]
+}

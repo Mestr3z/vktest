@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {
+  Container,
+  Typography,
+  Divider,
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+} from "@mui/material";
+import { ItemForm } from "./components/ItemForm";
+import { ItemTable } from "./components/ItemTable";
 
 function App() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Typography variant="h4" gutterBottom>
+        Менеджер записей
+      </Typography>
+
+      <Button variant="contained" onClick={() => setOpen(true)}>
+        Добавить запись
+      </Button>
+
+      <Dialog
+        open={open}
+        onClose={() => setOpen(false)}
+        fullWidth
+        maxWidth="md"
+      >
+        <DialogTitle>Добавить запись</DialogTitle>
+        <DialogContent>
+          <ItemForm onSuccess={() => setOpen(false)} />
+        </DialogContent>
+      </Dialog>
+
+      <Divider sx={{ my: 4 }} />
+
+      <ItemTable />
+    </Container>
   );
 }
 
